@@ -1,0 +1,8 @@
+/.vscode
+/todo.txt
+/package-lock.json
+/test/bin
+/test/obj
+/src/Todo.txt
+/src/bin
+/src/obj
