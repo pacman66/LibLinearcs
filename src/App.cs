@@ -343,6 +343,7 @@ _logger.LogCritical("Solver {0}", cp.solver_type.ToString("g"));
             }
             else {
                 model_=solver.train(prob, param);
+                 _logger.LogInformation(String.Format("Attempting save to model to file {0}",p.model_file_name));
                 if(model_.save(p.model_file_name)==0) {
                     _logger.LogInformation(String.Format("can't save model to file {0}",p.model_file_name));
                     Environment.Exit( -1 );
