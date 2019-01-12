@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 using Xunit.Abstractions;
-using liblinearcs;
+using liblinear;
 
 using System.Diagnostics;
 using System.IO;
@@ -34,6 +34,8 @@ public class ModelTests {
         Parameter p = new Parameter();
         p.eps = 0.01e-12;
         p.nr_weight = 10;
+        p.weight = new double[p.nr_weight];
+        p.weight_label = new int[p.nr_weight];
         p.solver_type = SOLVER_TYPE.L2R_LR_DUAL;
         p.init_sol=new double[100];
         p.init_sol[0] = 130.09229;

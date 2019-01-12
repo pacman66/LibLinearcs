@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 using Xunit.Abstractions;
-using liblinearcs;
+using liblinear;
 using System.Diagnostics;
 using System.IO;
 using System.Collections;
